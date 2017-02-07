@@ -26,7 +26,7 @@ app.use((req, res, next) => {
     }
   })
 
-  // next(); //不寫next 網頁會一直轉轉轉，表示無法存取到下面所寫的Code
+  next(); //不寫next 網頁會一直轉轉轉，表示無法存取到下面所寫的Code
 });
 
 // 維修時 ＋這段 所有網頁都會跑到maintenance.hbs
